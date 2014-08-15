@@ -1,0 +1,3 @@
+Username: 'wlod'
+Email address: blank
+Password: 'secret'

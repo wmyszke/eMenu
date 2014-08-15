@@ -1,0 +1,6 @@
+Jak uruchomić projekt:
+1. Uruchom uruchom_projekt.sh w folderze /eMenu/
+1.1. Skrypt sprawdza wersję Python'a
+1.2.Jeżeli Python jest w wersji 2 to uruchamia serwer deweloperski na porcie 8000
+2. Otwórz przeglądarkę, wpisz w pasku adresu: http://localhost:8000/emenu i zaakceptuj. W tym
+momencie powinna wyświetlić się strona projektu

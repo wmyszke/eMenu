@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+	{% block head %} {% endblock %}
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+			{% block header %}{% endblock %}
+	</header>
+	<section>
+			{% block content %}{% endblock %}
+    </section>
+    <footer>
+			{% block footer %}{% endblock %}
+	</footer>
+	</div> <!-- wrapper -->
+</body>
+</html>
