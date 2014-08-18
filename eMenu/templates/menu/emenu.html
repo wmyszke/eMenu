@@ -3,6 +3,12 @@
 {% block title %}eMenu{% endblock %}
 {% block head %}
 
+
+{% load staticfiles %}
+
+<script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+
+
 {% block headerspecific %}
 {% endblock %}
 
@@ -22,4 +28,19 @@
       ============================================================================== -->
 {% block footer%}
 
+<br /><br />
+<a href="/blad">Zgłoś błąd</a>
+
+<script>
+    $(function(){
+      // bind change event to select
+      $('#dynamic_select').bind('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
 {% endblock %}

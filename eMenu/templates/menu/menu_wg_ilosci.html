@@ -2,20 +2,17 @@
 
 {% block content %}
 
-
-
-
 <div>sortuj</div>
 <select id="dynamic_select">
   <option value="/">domyslnie</option>
   <option value="/,n">wg. nazwy</option>
-  <option value="/,i">wg. ilosci</option>
+  <option value="/,i" selected="selected">wg. ilosci</option>
 </select>
 <br /><br />
 
 {% for menu in menus %}
     {# Each "menu" is a Menu model object. #}
-    <a href="/karta/{{ menu.id }}">{{ menu.nazwa|upper }}</a><br />
+    {{ menu.nazwa|upper }}<br />
     ...
 {% endfor %}
 
@@ -34,5 +31,7 @@
         {% endif %}
     </span>
 </div>
+
+
 
 {% endblock %}

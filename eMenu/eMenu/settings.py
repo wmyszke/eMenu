@@ -81,6 +81,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+# to ponizej potrzebne do zdjec dodawanych poziomu admina
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "zdjecia"),
+    
+)
 
 TEMPLATE_DIRS = (
                  os.path.join(BASE_DIR, 'templates'),
